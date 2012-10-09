@@ -118,10 +118,8 @@ class GitRepo {
 	 * @return  void
 	 */
 	public function __construct($repo_path = null, $create_new = false, $_init = true) {
-print($repo_path);
 		if (is_string($repo_path))
 			$this->set_repo_path($repo_path, $create_new, $_init);
-print($this->repo_path);
 	}
 
 	/**
@@ -138,11 +136,8 @@ print($this->repo_path);
 		if (is_string($repo_path)) {
 			if ($new_path = realpath($repo_path)) {
 				$repo_path = $new_path;
-print($repo_path);
-print(is_dir($repo_path));
 				if (is_dir($repo_path)) {
 					if (file_exists($repo_path."/.git") && is_dir($repo_path."/.git")) {
-print(file_exists($repo_path."/.git") && is_dir($repo_path."/.git"));
 						$this->repo_path = $repo_path;
 					} else {
 						if ($create_new) {
@@ -205,7 +200,6 @@ print(file_exists($repo_path."/.git") && is_dir($repo_path."/.git"));
 	 * @return  string
 	 */	
 	protected function run_command($command) {
-print($command);
 		$descriptorspec = array(
 			1 => array('pipe', 'w'),
 			2 => array('pipe', 'w'),
@@ -220,11 +214,11 @@ print($command);
 		}
  
 		$status = trim(proc_close($resource));
-                #msg("command: " . $command);
-                #msg("status: " . $status);
-                #msg("stderr: " . $stderr);
-                #msg("stdout: " . $stdout);
-		//if ($status) throw new Exception($stderr);
+                msg("command: " . $command);
+                msg("status: " . $status);
+                msg("stderr: " . $stderr);
+                msg("stdout: " . $stdout);
+		if ($status) throw new Exception($stderr);
 
 		return $stdout;
 	}
