@@ -1,0 +1,7 @@
+base   commit
+author Daniel Egger
+email  daniel.egger@gmail.com
+date   2012-05-31
+name   commit plugin
+desc   issues a git commit after a save of a webpage
+url    http://danielegger.ch

@@ -3,3 +3,5 @@
 [[blog:start_django|Blog Beitrag über einfache Django-App]]
 
 [[django:tipps_n_snippets|Django Tipps und Tricks]]
+
+[[lisp:paip|Paradigms of AI Programming]]
