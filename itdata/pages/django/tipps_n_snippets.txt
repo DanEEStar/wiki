@@ -1,0 +1,22 @@
+====== Django Tipps und Tricks ======
+
+==== Models ====
+
+Adding extra manager methods is the preferred way to add "table-level" functionality to your models. (For "row-level" functionality -- i.e., functions that act on a single instance of a model object -- use model methods, which are explained later in this chapter.)
+
+<code>
+class BookManager(models.Manager):
+    def title_count(self, keyword):
+        return self.filter(title__icontains=keyword).count()
+
+class Book(models.Model):
+    title = models.CharField(max_length=100)
+    authors = models.ManyToManyField(Author)
+    publisher = models.ForeignKey(Publisher)
+    publication_date = models.DateField()
+    num_pages = models.IntegerField(blank=True, null=True)
+    objects = BookManager()
+
+    def __unicode__(self):
+        return self.title
+</code>

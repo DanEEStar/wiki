@@ -1,0 +1,98 @@
+====== Django Starter-Project ====== 
+
+Wir entwickeln einen einfachen Mini-Twitter-Clone als einfache django-app.
+
+===== 1. Virtualenv einrichten (was muss man dazu alles installieren??) =====
+
+http://www.saltycrane.com/blog/2009/05/notes-using-pip-and-virtualenv-django/
+<code>
+virtualenv --distribute djminitweet-env --python=/usr/local/bin/python
+</code>
+Isolierte Python-Umgebung
+
+===== 2. django installieren =====
+<code>
+pip install django
+</code>
+
+requirements.txt
+
+<code>
+pip freeze > requirements.txt
+</code>
+<code>
+pip install -r requirements.txt
+</code>
+
+Django-Projekt starten
+<code>
+django-admin.py startproject djminitweet
+</code>
+
+==== Datenbank einrichten ====
+<code>
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+
+def rel(path):
+    return os.join(PROJECT_ROOT, path)
+
+MANAGERS = ADMINS
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': rel('../db/djminitweet.db'),                      # Or path to database file if using sqlite3.
+        'USER': '',                      # Not used with sqlite3.
+        'PASSWORD': '',                  # Not used with sqlite3.
+        'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
+        'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
+    }
+}
+</code>
+
+<code>
+python manage.py syncdb
+</code>
+
+==== Local settings ====
+http://www.robgolding.com/blog/2010/05/03/extending-settings-variables-with-local_settings-py-in-django/
+
+<code>
+# in settings.py
+try:
+    from local_settings import *
+except:
+    pass
+</code>
+
+===== 2. Django with template project =====
+http://amccloud.com/post/14689947527/django-1-4-custom-project-template
+<code>
+django-admin.py startproject --template https://github.com/amccloud/django-project-skel/zipball/master --extension py,md djminitweet
+</code>
+
+git clone into existing directory
+<code>
+git clone git@github.com:DanEEStar/djminitweet.git tmp && git mv tmp/.git . && rm -rf tmp
+</code>
+
+Neue Projekt-Struktur:
+http://stackoverflow.com/questions/9212233/django-1-4-new-project-folder-structure-forces-project-prefixes
+
+===== 3. Setup of unit-tests with django-discover-runner =====
+https://github.com/jezdez/django-discover-runner
+
+Factory Boy for fixtures:
+https://github.com/dnerdy/factory_boy#readme
+It makes the code clearer.
+
+Web-Test
+http://webtest.pythonpaste.org/en/latest/index.html
+
+Django and Testing Talk Pycon US: http://pycon-2012-notes.readthedocs.org/en/latest/testing_and_django.html
+
+Splinter als Frontend zu Selenium
+
+===== 4. API with tastypie =====
+http://toastdriven.com/blog/2012/sep/04/djangocon-2012-slides-api-design-tips/
+

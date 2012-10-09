@@ -1,0 +1,5 @@
+/data/*
+/bin/*
+*.pyc
+.idea/*
+conf/users.auth.php
