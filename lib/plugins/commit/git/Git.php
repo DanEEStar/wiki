@@ -214,11 +214,11 @@ class GitRepo {
 		}
  
 		$status = trim(proc_close($resource));
-                msg("command: " . $command);
-                msg("status: " . $status);
-                msg("stderr: " . $stderr);
-                msg("stdout: " . $stdout);
-		if ($status) throw new Exception($stderr);
+                #msg("command: " . $command);
+                #msg("status: " . $status);
+                #msg("stderr: " . $stderr);
+                #msg("stdout: " . $stdout);
+		#if ($status) throw new Exception($stderr);
 
 		return $stdout;
 	}
