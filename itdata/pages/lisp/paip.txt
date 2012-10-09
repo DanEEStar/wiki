@@ -1,3 +1,2 @@
 ====== Paradigms of AI Programming ======
 
-yes!!
