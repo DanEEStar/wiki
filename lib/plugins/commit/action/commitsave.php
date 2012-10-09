@@ -22,7 +22,7 @@ class action_plugin_commit_commitsave extends DokuWiki_Action_Plugin {
     }
 
     public function handle_io_wikipage_write(Doku_Event &$event, $param) {
-        //error_reporting(-1);
+        error_reporting(E_ALL);
         require_once '/srv/http/wiki.danielegger.ch/lib/plugins/commit/git/Git.php';
         $repo = Git::open('/srv/http/wiki.danielegger.ch');
         $repo->add('*');
