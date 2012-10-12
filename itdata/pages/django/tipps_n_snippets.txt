@@ -5,6 +5,11 @@
   * https://github.com/omab/django-social-auth
   * https://github.com/etianen/django-reversion
   * https://github.com/tschellenbach/Django-facebook
+  * https://github.com/maraujop/django-crispy-forms
+  * https://github.com/ask/django-celery
+  * https://github.com/toastdriven/django-haystack
+  * https://bitbucket.org/kmike/django-easy-maps
+  * https://github.com/dcramer/django-debug-toolbar
 
 ==== Models ====
 
