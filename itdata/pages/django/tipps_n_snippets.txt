@@ -2,6 +2,7 @@
 
 ==== Django Apps und Libraries ====
   * https://github.com/django-extensions/django-extensions
+  * https://bitbucket.org/offline/django-annoying/wiki/Home
   * https://github.com/omab/django-social-auth
   * https://github.com/etianen/django-reversion
   * https://github.com/tschellenbach/Django-facebook
