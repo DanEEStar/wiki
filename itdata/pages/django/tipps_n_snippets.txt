@@ -12,6 +12,9 @@
   * https://bitbucket.org/kmike/django-easy-maps
   * https://github.com/dcramer/django-debug-toolbar
 
+==== Local Flavors ====
+https://docs.djangoproject.com/en/dev/ref/contrib/localflavor/
+
 ==== Models ====
 
 Adding extra manager methods is the preferred way to add "table-level" functionality to your models. (For "row-level" functionality -- i.e., functions that act on a single instance of a model object -- use model methods, which are explained later in this chapter.)
