@@ -5,3 +5,5 @@
 [[django:tipps_n_snippets|Django Tipps und Tricks]]
 
 [[lisp:paip|Paradigms of AI Programming]]
+
+[[ios:tipps|iOS Programming]]
