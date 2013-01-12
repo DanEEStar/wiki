@@ -4,3 +4,6 @@
 
   * used with __bridge, ARC does not give ownership of this object
   * always call CFRelease at the end, the object is not available anymore afterwards
+
+==== View Controller Relationships ====
+Ranch-Guider Chapter 13, for the more curios
