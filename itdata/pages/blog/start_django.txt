@@ -66,18 +66,10 @@ except:
 </code>
 
 ===== 2. Django with template project =====
-http://amccloud.com/post/14689947527/django-1-4-custom-project-template
+https://github.com/DanEEStar/django-twoscoops-project
 <code>
-django-admin.py startproject --template https://github.com/amccloud/django-project-skel/zipball/master --extension py,md djminitweet
+django-admin.py startproject --template=https://github.com/DanEEStar/django-twoscoops-project/zipball/master --extension=py,rst,html,rb --name=Vagrantfile icecream
 </code>
-
-git clone into existing directory
-<code>
-git clone git@github.com:DanEEStar/djminitweet.git tmp && git mv tmp/.git . && rm -rf tmp
-</code>
-
-Neue Projekt-Struktur:
-http://stackoverflow.com/questions/9212233/django-1-4-new-project-folder-structure-forces-project-prefixes
 
 ===== 3. Setup of unit-tests with django-discover-runner =====
 https://github.com/jezdez/django-discover-runner
