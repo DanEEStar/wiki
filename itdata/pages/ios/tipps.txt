@@ -7,6 +7,7 @@ COMMIT_NUMBER=`git rev-list --count master`
 COMMIT_HASH=`git rev-parse --short HEAD`
 /usr/libexec/PlistBuddy -c "Set :CFBundleVersion $COMMIT_NUMBER $COMMIT_HASH" "${TARGET_BUILD_DIR}"/"${INFOPLIST_PATH}"
 </code>
+Quelle: http://stackoverflow.com/a/12658311/669561
 
 ==== CF-Objects ====
 
