@@ -9,6 +9,7 @@ COMMIT_HASH=`git rev-parse --short HEAD`
 /usr/libexec/PlistBuddy -c "Set ch.iterativ.ReleaseGitHash $COMMIT_HASH" "${TARGET_BUILD_DIR}"/"${INFOPLIST_PATH}"
 </code>
 Quelle: http://stackoverflow.com/a/12658311/669561
+Der Key ch.iterativ.ReleaseGitHash muss dabei im Info.plist file gesetzt sein.
 
 ==== CF-Objects ====
 
