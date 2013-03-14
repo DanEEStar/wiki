@@ -1,5 +1,13 @@
 ====== iOS Programming ======
 
+==== Automatisches Setzen der build-nummer in XCode ====
+Als letzten Schritt in den Run-Scripts
+<code>
+COMMIT_NUMBER=`git rev-list --count master`
+COMMIT_HASH=`git rev-parse --short HEAD`
+/usr/libexec/PlistBuddy -c "Set :CFBundleVersion $COMMIT_NUMBER $COMMIT_HASH" "${TARGET_BUILD_DIR}"/"${INFOPLIST_PATH}"
+</code>
+
 ==== CF-Objects ====
 
   * used with __bridge, ARC does not give ownership of this object
