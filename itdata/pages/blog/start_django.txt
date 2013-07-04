@@ -68,7 +68,7 @@ except:
 ===== 2. Django with template project =====
 https://github.com/DanEEStar/django-twoscoops-project
 <code>
-django-admin.py startproject --template=https://github.com/DanEEStar/django-twoscoops-project/zipball/master --extension=py,rst,html,rb --name=Vagrantfile icecream
+django-admin.py startproject --template=https://github.com/DanEEStar/django-twoscoops-project/zipball/master --extension=py,rst,html,rb,pp --name=Vagrantfile icecream
 </code>
 
 ===== 3. Setup of unit-tests with django-discover-runner =====
