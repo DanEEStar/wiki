@@ -1,5 +1,5 @@
 ==== Install virtualenv in Ubuntu 12.04 ====
 
- * the virtualenv in python-virtualenv is rather old
- * you should not install python libraries globally in the machine
- * install only pip and virtualenv via easy_install
+  * the virtualenv in python-virtualenv is rather old
+  * you should not install python libraries globally in the machine
+  * install only pip and virtualenv via easy_install
