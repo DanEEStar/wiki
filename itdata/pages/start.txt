@@ -2,6 +2,8 @@
 
 [[blog:start_django|Blog Beitrag über einfache Django-App]]
 
+[[blog:virtualenv_ubuntu1204|Blog Beitrag über installieren von virtualenv in Ubuntu 12.04]]
+
 [[django:tipps_n_snippets|Django Tipps und Tricks]]
 
 [[lisp:paip|Paradigms of AI Programming]]
