@@ -13,3 +13,16 @@ you can then login via the following command
 <code>
 ssh -i .ssh/azure_private.key azuredaneestar.cloudapp.net
 </code>
+
+use the shorthand for logging in to azure by adding the following lines to your .ssh/config file
+<code>
+Host azuredaneestar
+    HostName=azuredaneestar.cloudapp.net
+    User=daniel
+    IdentityFile=~/.ssh/azure_private.key
+</code>
+
+you can then login to your azure vm via the following command:
+<code>
+ssh azuredaneestar
+</code>
