@@ -9,3 +9,7 @@ http://www.windowsazure.com/en-us/manage/linux/how-to-guides/ssh-into-linux/
 openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout azure_private.key -out azure_public.pem
 </code>
 
+you can then login via the following command
+<code>
+ssh -i .ssh/azure_private.key azuredaneestar.cloudapp.net
+</code>
