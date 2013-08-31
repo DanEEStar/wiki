@@ -1,3 +1,5 @@
+[[blog:azure_linux_vm|Blog Beitrag über Linux-VMs auf Windows Azure]]
+
 [[blog:netflix|Blog Beitrag über Netflix]]
 
 [[blog:start_django|Blog Beitrag über einfache Django-App]]
