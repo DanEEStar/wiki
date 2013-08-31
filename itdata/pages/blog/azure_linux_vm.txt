@@ -1,0 +1,11 @@
+With Bizspark we get a MSDN subscription which includes Windows Azure Credit
+
+On Azure you can create Linux Virtual Machines.
+
+The key must be in the format X.509. Here is the explination how you can create them:
+http://www.windowsazure.com/en-us/manage/linux/how-to-guides/ssh-into-linux/
+
+<code>
+openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout azure_private.key -out azure_public.pem
+</code>
+
