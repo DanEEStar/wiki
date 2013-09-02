@@ -1,3 +1,5 @@
+[[blog:start_with_clojure|Start with Clojure]]
+
 [[blog:azure_linux_vm|Blog Beitrag über Linux-VMs auf Windows Azure]]
 
 [[blog:netflix|Blog Beitrag über Netflix]]
