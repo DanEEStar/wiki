@@ -1,0 +1,11 @@
+====== Show resources from iPhone apps ======
+
+The app needs to be in the local file
+
+{{:blog:itunes_media_app_location.png?nolink&200|}}
+
+rename ipa-File to zip
+
+unzip the file
+
+browse contents
