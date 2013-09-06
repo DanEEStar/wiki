@@ -1,0 +1,6 @@
+====== Emacs Tipps ======
+
+show library source code
+<code>
+M-x find-library doctor RET
+</code>
