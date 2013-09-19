@@ -5,5 +5,10 @@ Raspberry Pi SD-Card flashen mit Wheezy
 sudo dd bs=1m if=2013-09-10-wheezy-raspbian.img of=</dev/rdisk3>
 </code>
 
+Find the Raspberry Pi in the network (from: http://serialized.net/2013/04/headless_rpi/)
+<code>
+nmap -T5 -n -p 22 --open --min-parallelism 200 192.168.1.0/24
+</code>
+
 
  * Python auf dem Pi installieren
