@@ -23,5 +23,11 @@ Resize the partition at first login
 sudo raspi-config
 </code>
 
+The package python-apt needs to be installed, so that ansible works correctly
+<code>
+ansible rpi -a "sudo apt-get install python-apt" -i hosts
+</code>
+
+
 
  * Python auf dem Pi installieren
