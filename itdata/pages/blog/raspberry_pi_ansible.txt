@@ -2,7 +2,10 @@
 
 Raspberry Pi SD-Card flashen mit Wheezy
 <code>
-sudo dd bs=1m if=2013-09-10-wheezy-raspbian.img of=</dev/rdisk3>
+# unmount disk
+> sudo diskutil unmountDisk /dev/rdisk3
+# write img to disk
+> sudo dd bs=1m if=2013-09-10-wheezy-raspbian.img of=</dev/rdisk3>
 </code>
 
 Find the Raspberry Pi in the network (from: http://serialized.net/2013/04/headless_rpi/)
