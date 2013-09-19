@@ -10,5 +10,9 @@ Find the Raspberry Pi in the network (from: http://serialized.net/2013/04/headle
 nmap -T5 -n -p 22 --open --min-parallelism 200 192.168.1.0/24
 </code>
 
+Try a login to the machine. Make the login without password
+<code>
+ssh-copy-id pi@192.168.1.78
+</code>
 
  * Python auf dem Pi installieren
