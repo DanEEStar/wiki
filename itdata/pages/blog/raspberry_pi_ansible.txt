@@ -30,4 +30,4 @@ ansible rpi -a "sudo apt-get install python-apt" -i hosts
 
 
 
- * Python auf dem Pi installieren
+Locales generieren
