@@ -1,3 +1,5 @@
+[[blog:raspberry_pi_ansible|Raspberry Pi (Arch Linux) mit Ansible konfigurieren]]
+
 [[blog:emacs|Emacs Tipps]]
 
 [[blog:resources_from_iphone_apps|Show resources from iPhone Apps]]
