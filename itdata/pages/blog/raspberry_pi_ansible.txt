@@ -18,7 +18,7 @@ Try a login to the machine. Make the login without password
 ssh-copy-id pi@192.168.1.78
 </code>
 
-Resize the partition at first login
+Resize the partition at first login and locales
 <code>
 sudo raspi-config
 </code>
