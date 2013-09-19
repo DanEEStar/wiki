@@ -2,7 +2,7 @@
 
 Raspberry Pi SD-Card flashen mit Wheezy
 <code>
-sudo dd bs=1m if=2013-09-10-wheezy-raspbian.img of=/dev/rdisk3
+sudo dd bs=1m if=2013-09-10-wheezy-raspbian.img of=</dev/rdisk3>
 </code>
 
 
