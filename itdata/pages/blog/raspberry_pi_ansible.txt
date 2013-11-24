@@ -1,4 +1,4 @@
-======Raspberry Pi (Arch Linux) mit Ansible konfigurieren======
+======Raspberry Pi (Raspbian) mit Ansible konfigurieren======
 
 Raspberry Pi SD-Card flashen mit Wheezy
 <code>
